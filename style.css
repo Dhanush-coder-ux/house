@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: white;
+}
+.zero{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img.png.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+.one{
+    
+width: 85%;
+margin: auto;
+padding: 35px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+h1{
+    width: 120px;
+    cursor: pointer;
+}
+.one ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    
+}
+.one ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.one ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.one ul li:hover::after{
+    width:100%;
+}
+.three{
+    text-align: center;
+    color: white;
+   margin-top: 50px;
+}
+button{
+    width: 200PX;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background:cyan;
+    height: 200%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    transition: 0.5s;
+
+
+}
+button:hover span{
+    width: 200%;
+}
+button:hover{
+    border: none;
+}
